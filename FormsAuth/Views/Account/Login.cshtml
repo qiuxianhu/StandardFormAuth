@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+<h2>Login</h2>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<form action="/Account/Login" method="post">
+    <input type="text" name="returnUrl" hidden="hidden" value="@this.ViewBag.ReturnUrl"/>
+    <input type="text"  name="userName"/>
+    <input type="password" name="password" />
+    <input type="submit" value="提交"/>
+</form>
+
+
